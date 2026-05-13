@@ -1,8 +1,8 @@
-const {router} = require("router");
-const usersRouter = usersRouter();
+const {Router} = require("express");
+const usersRouter = Router();
 
 usersRouter.get("/",(req,res)=>{
     res.send("Hello worlde");
 });
 
-exports.module = usersRouter;
+module.exports = usersRouter;

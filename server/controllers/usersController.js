@@ -2,7 +2,7 @@ const usersStorage = require("../storages/usersStorage");
 
 exports.usersListGet = (req,res) =>{
     res.render("index",{
-        title: "User liset",
+        title: "User list",
         users: usersStorage.getUsers(),
     });
 };

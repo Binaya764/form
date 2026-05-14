@@ -15,6 +15,10 @@ getUser(id){
     return this.storage[id];
 }
 
+getUsers(){
+    return Object.values(this.storage);
+}
+
 updateUser(id,{firstName , lastName}){
     this.storage[id] = {id, firstName, lastName}
 }

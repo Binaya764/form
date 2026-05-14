@@ -1,4 +1,4 @@
-const usersStorage = require("../storages");
+const usersStorage = require("../storages/usersStorage");
 
 exports.usersListGet = (req,res) =>{
     res.render("index",{

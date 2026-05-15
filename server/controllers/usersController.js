@@ -49,6 +49,11 @@ exports.userUpdatePost = [
     }
 ];
 
+exports.usersDeletePost = (req,res) => {
+    usersStorage.deleteUser(req.params.id);
+    res.redirect("/");
+};
+
 
 const {body, validationResult, matchedData} = require("express-validator");
 

@@ -9,6 +9,7 @@ addUser({firstName, lastName}){
     const id = this.id;
     this.storage[id]= {id, firstName, lastName};
     this.id++;
+    console.log(this.storage);
 }
 
 getUser(id){

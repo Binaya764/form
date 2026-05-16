@@ -1,19 +1,37 @@
-<!-- views/createUser.ejs -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/createstyle.css">
+</head>
 <body>
-  <h1><%= title %></h1>
-  <form action="/create" method="POST">
-    <label for="firstName">First Name: </label>
-    <input type="text" name="firstName" id="firstName" required>
-    <label for="lastName">Last Name: </label>
-    <input type="text" name="lastName" id="lastName" required>
-    <button type="submit">Submit</button>
-  </form>
-  <a href="/">Back to home</a>
+
+  <div class="form-wrapper">
+    <div class="form-card">
+      <h1><%= title %></h1>
+      
+      <form action="/create" method="POST">
+        <!-- First Name Field -->
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Enter first name" required>
+        </div>
+        
+        <!-- Last Name Field -->
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Enter last name" required>
+        </div>
+        
+        <!-- Action Buttons -->
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+      
+      <a href="/" class="link-back">← Back to home</a>
+    </div>
+  </div>
+
 </body>
 </html>

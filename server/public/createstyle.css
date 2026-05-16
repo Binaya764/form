@@ -1,0 +1,97 @@
+/* Container to center the form card on the viewport */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form structure layout */
+.form-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.form-card h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Individual field grouping */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+/* Input boxes styling */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #495057;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+/* Submit button styling */
+.btn-submit {
+    width: 100%;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #155cb4;
+}
+
+/* Return home link styling */
+.link-back {
+    display: block;
+    text-align: center;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.link-back:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}

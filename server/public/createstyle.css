@@ -120,3 +120,34 @@
 .error-wrapper li:last-child {
     margin-bottom: 0;
 }
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #495057;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.age{
+    display: inline;
+    margin: 0px,0px,20px,0px;
+    width: 10%;
+    height: 10%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #495057;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
